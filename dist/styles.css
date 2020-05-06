@@ -1,0 +1,60 @@
+/*
+Authore: Anas Nasrallah.
+Purpose: Proficiency Exam.
+Date: 06.05.20
+*/
+
+#container {
+    width: 750px;
+    display: grid;
+    grid-template-areas: 
+    "h h h h h h h h h h h"
+    "b b b b b b b b b b b"
+    "b b b b b b b b b b b"
+    "b b b b b b b b b b b"
+    "b b b b b b b b b b b"
+    "b b b b b b b b b b b"
+    "b b b b b b b b b b b"
+    "b b b b b b b b b b b"
+    "b b b b b b b b b b b";
+}
+
+#header{
+    grid-area: h;
+    display: grid;
+    grid-template-areas:
+    'i i i i i s s';
+}
+
+#ingredientInput{
+    height: 50px;
+    grid-area: i;
+}
+
+#searchBtn{
+    height: 50px;
+    grid-area: s;
+}
+
+#recipes{
+    width: 750px;
+    display: flex; 
+    grid-area: b;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+}
+
+.recipe{
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    width: 370px;
+    background-color:lightgreen;    
+}
+
+ul{
+    text-align: left;
+}

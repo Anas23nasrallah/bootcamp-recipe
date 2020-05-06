@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>The Ultimate Recipe App</title>
 </head>
+
 <body>
-    <input id='ingredientInput' placeholder="Enter an ingredient">
-    <button id='searchBtn'> Search Recipe </button>
-    <div id='ingredients'></div>
+    
+    <div id='container'>
+
+        <div id='header'>
+
+            <input id='ingredientInput' placeholder="Enter an ingredient">
+            <button id='searchBtn'> Search Recipe </button>
+        
+        </div>
+
+        <div id='recipes'></div>
+
+    </div>
+
 
 
     <script id="recipe-temp" type="text/x-handlebars-template">
-        <div class='ingredient'>
-            <a href={{href}} >{{title}}</a>
+        <div class='recipe'>
+            <a href={{href}} >{{title}}</a><br><br>
             <img src={{thumbnail}}>
             <ul>
                 {{#each ingredients}}
@@ -27,4 +42,5 @@
     <script src='/handlebars/dist/handlebars.js'></script>
     <script src='main.js'></script>
 </body>
+
 </html>
