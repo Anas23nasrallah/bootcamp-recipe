@@ -8,9 +8,23 @@
 <body>
     <input id='ingredientInput' placeholder="Enter an ingredient">
     <button id='searchBtn'> Search Recipe </button>
+    <div id='ingredients'></div>
 
+
+    <script id="recipe-temp" type="text/x-handlebars-template">
+        <div class='ingredient'>
+            <a href={{href}} >{{title}}</a>
+            <img src={{thumbnail}}>
+            <ul>
+                {{#each ingredients}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </script>
 
     <script src='/jquery/dist/jquery.js'></script>
+    <script src='/handlebars/dist/handlebars.js'></script>
     <script src='main.js'></script>
 </body>
 </html>
